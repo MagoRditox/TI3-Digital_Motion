@@ -1,0 +1,159 @@
+﻿SISTEMATIZACIÓN PROYECTO 
+Taller de integración III
+PRIMERA PARTE
+
+
+1. Nombre del proyecto
+Embedded Python Sample Interface
+	
+
+2. Integrantes Equipo de Trabajo:
+Nombre completo
+	Facultad/Unidad
+	Correo electrónico
+	Firma
+	Esteban Fernando Ellwanger Reyes
+	Ingeniería Civil Informática
+	eellwanger2016@alu.uct.cl
+	
+
+
+
+	Patricio Nicolás Mardones Ponce
+	Ingeniera Civil En Informática
+	pmardones2016@alu.uct.cl
+	
+
+
+
+	Juan Cristóbal Zúñiga De La Fuente
+	Ingeniería Civil Informática
+	jzuniga2016@alu.uct.cl
+	
+
+
+
+	Katherine Valeska Rojas Mora
+	Ingenieria Civil Informatica
+	krojas2016@alu.uct.cl
+	
+
+
+
+	Carlos Andres Ritz Parra 
+	Ingenieria Civil Informatica
+	critz2016@alu.uct.cl
+	
+
+
+
+	
+
+Segunda Parte: Presentación del Proyecto
+BREVE DESCRIPCIÓN (600 a 900 palabras, una página aprox.). Debe contener causas que dan origen a la problemática, fundamentación, objetivos y/o soluciones.
+
+
+La empresa Spica cuenta con una amplia variedad de sistemas entre los cuales nos encontramos con capturadoras como también soluciones customizadas de rastreo a alta frecuencia, a pesar de tener tan gran cantidad de sistemas se necesitan en muchos casos en que el cliente pueda acceder a los datos a tiempo real, ya que esto los ayuda a poder encontrar errores en sus trabajos y así poder solucionarlo de una manera más eficaz, y no esperar a que esté todo terminado para luego poder revisarlo, lo que lleva a un trabajo más amplio y con muchas horas de revisión para poder encontrar esos pequeños errores los cuales a simple vista no se ven, sino que es necesario realizar este proceso para que el cliente pueda obtener los datos en tiempo real y ver la falla que poseen, ya que en algunos casos estos pequeños errores pueden ser fatales dependiendo de lo que el cliente realice. Usualmente los usuarios que utilizan todos los sistemas que brinda esta empresa necesitan acceder a imágenes o datos mientras están en proceso para tomar decisiones durante la secuencia de captura, comandar al sistema para seguir o parar, o ejecutar algún otro script o comando necesario, o inclusive poder controlar otro sistema en función de los resultados obtenidos, con ellos lograr los objetivos esperados para esta problemática, en lo que se refiere la revisión de imágenes las cuales son procesadas y analizadas, para poder tomar las decisiones pertinentes durante la secuencia de captura, que ayuda a mejorar pequeñas fallas que se presentan. Teniendo como resultado un programa realizado en python utilizando una serie de funciones desde algunas de las muchas librerías que presenta este lenguaje de programación, y así poder analizar dichas imágenes con librerías tales como son OpenCV, numpy u otras las cuales se utilizan para el procesamiento y análisis de imágenes.
+El objetivo de este problema es la creación de un programa el cual nos pueda brindar una óptima solución utilizando diferentes herramientas para lo cual se hará la solicitación de diferentes imágenes, las cuales deberán ser analizadas para posteriormente ser procesadas y analizadas, La solicitud de creación de un programa consistirá en contar una serie de “blobs” y transmitir los datos a un servidor mediante una solicitud.
+Para lo cual debemos realizar una web lo sumamente simple y amigable haciendo uso de algunas tecnologías dentro de esta como lo son CSS para el diseño de este, JavaScript para todo lo relacionado con cualquier tipo de actividad dentro de la página, lo que se busca con la realización de esta web es que cualquier usuario pueda hacer uso de este sin importar el tipo de conocimientos que posea en cuanto al análisis o lectura de este necesite y que pueda ser utilizada en cualquier tipo de navegador que el usuario desee sin la necesidad de imponer la utilización de alguno en particular, además  que dentro de este se incorporen las necesidades mínimas que son necesarias para la lectura de foto o videos que se realicen y de ser posible llevar a cabo la incorporación de poder visualizar los videos capturados en base a una nube temporal ya que estos al ser de una calidad sumamente alta tendrán tamaños los cuales retrasarán en lo que refiere a obtención de datos o bien pueden surgir problemas externos en donde podemos encontrar algún tipo de caída o retraso a la hora de establecer la comunicación con este impidiendo ser analizados, que pueden ser sumamente vitales a la hora de llevar a cabo decisiones importantes en lo que respecta al trabajo ejecutado. En síntesis, para cualquier tipo de cliente esta es una función sumamente importante ya que esto les permitirá analizar las imágenes correspondientes para así obtener los resultados esperados y sin tener que esperar mucho tiempo.
+
+
+ANÁLISIS DE LA SITUACIÓN SIN PROYECTO.
+Señale cuáles son las condiciones actuales de la problemática, en que se desarrollará el proyecto y cuáles son las necesidades detectadas que se espera poder abordar. Incluya antecedentes empíricos (900 a 1800 palabras, una a dos páginas aprox.).
+
+
+
+
+
+
+Spica Technology Corporation, Inc., establecida en 1993, ofrece productos de software de imágenes digitales de alto rendimiento y fáciles de usar para aplicaciones de análisis de movimiento 3D, visión artificial, metrología y grabación de video digital. La compañía envía productos a clientes OEM, militares, científicos y educativos tanto a nivel nacional como internacional, disponibles y respaldados por una extensa red de distribución estadounidense e internacional. Esta compañía invierte continuamente de manera agresiva en investigación y desarrollo, para cumplir con las tecnologías de imágenes en constante evolución.
+En estos momentos, el presente reto nos invita a analizar cómo se maneja el procesamiento de datos (imágenes), desde una perspectiva estudiantil y que representa el avance propio de estos para un futuro, siendo que se ha estudiado desde un inicio diferentes metodos de programacion y proceso de datos, podemos decir que una de las herramientas que más ventajas dan, dentro de las esperadas por el cliente y mejor trabajadas es el proceso de imágenes en Python con la librería OpenCV. Estas herramientas serán trabajas dentro de un editor de programación ya sea VSC, IDLE de Python, Atom, siendo el programador el que elija su editor, ya que estas pueden descargarse de forma gratuita y sus librerías también. 
+Actualmente el procesamiento de imágenes se ve bastante en la vida diaria, las técnicas que se aplican a estas imágenes digitales se realizan para el mejoramiento de calidad o la búsqueda de información dentro de estas, 
+La detección y el seguimiento de objetos es una de las áreas críticas de investigación debido al cambio de rutina en el movimiento del objeto y la variación en el tamaño de la escena, las oclusiones, las variaciones de apariencia y los cambios de iluminación y movimiento del entorno. Específicamente, la selección de características es el papel vital en el seguimiento de objetos. Está relacionado con muchas aplicaciones en tiempo real como percepción de vehículos, videovigilancia, etc. Para superar el problema de la detección, el seguimiento se relaciona con el movimiento y la apariencia de los objetos. La mayor parte del algoritmo se centra en el algoritmo de seguimiento para suavizar la secuencia de video. Por otro lado, pocos métodos utilizan la información previa disponible sobre la forma, el color, la textura del objeto, etc. En esta investigación se discute y analiza el algoritmo de seguimiento que combina los parámetros de objetos mencionados anteriormente. Su principal objetivo es relacionar los objetos, así como la forma o características, la ubicación de los objetos en sucesivas secuencias de video. Posteriormente, la clasificación y detección de objetos son esenciales para el seguimiento de objetos en la aplicación de visión por computadora. Además, el seguimiento es el primer paso para localizar o detectar el objeto en movimiento en el marco. Seguido de esto, el objeto detectado podría dividirse en árboles, pájaros, humanos y vehículos, etc. Sin embargo, en el enfoque de procesamiento de imágenes, el seguimiento de objetos mediante secuencias de video es una tarea desafiante. Además, varios problemas parecen atribuirse a la oclusión de un objeto a una escena, de un objeto a otro, al movimiento de un objeto complejo, a los requisitos de procesamiento en tiempo real, así como a la forma incorrecta del objeto. 
+Posteriormente, este seguimiento se puede explicar como el procedimiento de determinar la orientación del objeto a lo largo del tiempo a medida que el objeto se mueve a lo largo de una escena. Esto está cobrando importancia en el campo de la visión por computadora debido a la expansión de computadoras de alta potencia y la creciente necesidad de sistemas de vigilancia automatizados, y se aplica ampliamente para aplicaciones, a saber, vigilancia automatizada, monitoreo robótico, interfaz hombre-máquina, reconocimiento basado en movimiento, vehículo. navegación, monitoreo de tráfico e indexación de videos. Un número sustancial de estas aplicaciones requieren métodos de seguimiento fiables que cumplan con las restricciones en tiempo real y sean desafiantes y complejos con respecto a los cambios en el movimiento, la escala y la apariencia de los objetos, la iluminación de la escena y la oclusión. Los resultados del seguimiento podrían verse afectados por la disparidad de uno de los parámetros. Para abordar los problemas explicados anteriormente y otros en el seguimiento de objetos, se han propuesto numerosos enfoques. En esta aplicación de seguimiento de objetos, el objeto de destino podría determinarse como cualquier cosa que sea atractivo para el análisis. Además, el seguimiento de objetos en movimiento es una de las principales tareas de la visión por computadora y se aplica ampliamente en la visión industrial, los sistemas de transporte inteligente y la vigilancia visual.
+La capacidad de las máquinas para identificar objetos sospechosos e identificar aún más sus actividades en un entorno específico es una parte importante para permitir que una máquina interactúe con los seres humanos de una manera fácil y eficaz. El enfoque actual para analizar y detectar el objeto sospechoso generalmente necesita marcadores excepcionales conectados al objeto sospechoso que impiden la aplicación de tecnología extensiva. En este trabajo, estudiar y analizar el enfoque anterior hacia el seguimiento de objetos mediante secuencias de video a través de diferentes fases.
+A continuación se describen tres pasos clave en el análisis de video:
+1. Identificación del objeto objetivo en secuencia en movimiento.
+2. Seguimiento de objetos basado en un fotograma a otro fotograma.
+3. Seguimiento del objeto de cámara a cámara.
+El principal desafío es el problema de la variabilidad. Un sistema de detección y seguimiento visual debe generalizarse a través de enormes variaciones en la apariencia de los objetos, como por ejemplo, el punto de vista, la pose, las expresiones faciales, las condiciones de iluminación, la calidad de la imagen u oclusiones, manteniendo la especificidad para no afirmar que todo lo que ve son objetos de interés. Además, estas tareas deberían realizarse preferiblemente en tiempo real en plataformas informáticas convencionales.
+La combinación de análisis estadístico de características visuales e información de movimiento temporal generalmente conduce a enfoques más sólidos. Sin embargo, para los sistemas que enfrentan condiciones ruidosas, se sugiere que el seguimiento sea seguido por la detección para recopilar estadísticas suficientes que proponen varios algoritmos de seguimiento antes de detectar. Además, rastrea la dirección para elegir las regiones de detección, las áreas de origen y sumidero. En cualquier caso, ha sido común en los últimos años asumir que se requieren diferentes estrategias para estas diferentes tareas.
+
+
+
+
+Objetivos Generales :
+Diseño e implementación de algoritmos y técnicas: Una vez conocida la problemática, realizaremos el diseño que permita integrar las técnicas anteriormente elegidas y conformar un sistema que sea capaz de resolver los problemas a los que se enfrenta este.
+
+
+Elaboración de banco de vídeos y pruebas: Después de haber diseñado el sistema se grabará un conjunto de vídeos que servirá para analizar o medir la eficacia del diseño elaborado en el paso anterior. En esta parte se describirán las diferentes pruebas que vamos a realizar para probar el conjunto de vídeos para extraer los resultados que determinen las conclusiones de este trabajo.
+
+
+
+
+OBJETIVOS: Deben señalar el para qué, las metas que deseen conseguir.
+Generales: son los primeros que hay que plantearse y deben ser muy pocos.
+Específicos: Concretan a los generales y conducen a su consecución. (submetas)
+
+
+
+
+
+
+ACTIVIDADES a realizar para lograr los objetivos planteados (1800 a 2700 palabras, dos a tres páginas aprox.).
+
+
+Antes de proceder a realizar el desarrollo de la temática planteada, en primera instancia debemos como equipo el poder tener una buena coordinación de trabajo, para así contemplar una serie de reuniones semanales, las cuales deben ser acordes a los tiempos en los cuales los integrantes tienen tiempo. En este punto el Scrum Master debe definir un horario fijo para tales reuniones, ya que estas proceden a la finalización de procedimientos y/o ideas que deben de llevarse a cabo para avanzar en el proyecto, este tipo de reuniones son muy importantes para siempre tener una óptima comunicación entre el equipo de trabajo y a su vez ir a aportando nuevas ideas para posteriormente ver si se implementaran, a su vez es importante revisar los avances realizados de sesiones pasadas y de esta manera resolver dudas o problemas que se hayan efectuado en esos periodos. Otro de los puntos importantes a tener en cuenta para el equipo, es la asistencia semanal, a las reuniones con el profesor, el cual nos orientará, tanto al Scrum, como a su equipo de trabajo, en cuanto a los avances que se presenten o dudas que se produzcan.
+En cuanto a los conocimientos de programación sobre las herramientas solicitadas por nuestro cliente, debemos tener en cuenta, la realización de una breve o profunda investigación de estos elementos, herramientas, librerías ya que si no se han utilizado antes por los integrantes debe llevar primero a una investigación grupal, además de la personal, ya que se delegan tareas a cada integrante, afectando así  positiva y/o negativamente al producto final. 
+Procediendo a su utilización y  respectiva instalación, configuración y preparación del entorno en el cual trabajaremos, se llega al punto mas importante porque como equipo nuestro deber es complementarnos el uno al otro por lo cual es de suma importancia realizar esta búsqueda para un óptimo trabajo grupal sin retrasos ni problemáticas.
+ 
+En primera instancia antes de proceder al desarrollo de lo necesitado debemos de realizar una sistematización del proyecto para tener una idea de cómo va a ser necesario abordar el presente trabajo por lo cual será necesario la creación de diferentes diagramas para obtener todos los objetivos y funciones necesarias que necesitará nuestro proyecto para de esta manera trabajar de una manera mucho más eficiente y sin pérdida de tiempo-producción, entre los diagramas que se necesitaran en primera instancia se necesitará un Diagrama de integración de sistemas/protocolos,también se necesitará un Diagrama Modular(De Componentes) el cual nos ayudará a la representación de las relaciones entre los componentes individuales del sistema mediante una vista de diseño estática. 
+Con el avance constante del proyecto y comprendiendo que en el trayecto se realizarán reformas, debemos tener en cuenta que estos diagramas sufrirán cambios en el transcurso del tiempo por diversos motivos entre los cuales principalmente
+puede ser la mejora y eficacia de algunos elementos, pueden ser completamente
+diferentes al finalizarlos, o solo mínimos cambios en su composición.
+Estos cambios pueden ser a petición del cliente o profesor, ya que también pueden ser erróneos, para la solución esperada.
+ 
+Para poder realizar un correcto funcionamiento y desarrollo de este proyecto debemos de primero como ingeniero contar con un conocimiento base de lo que es el lenguaje de programación de Python el cual es un requisito descrito por el cliente para la elaboración del proyecto y sus correspondientes librerías que al igual del lenguaje que se deseó, el cliente dio una lista de librerías específicas con las cuales se tendrá que realizar, ya que mediante un proceso de SPICA, debemos de procesar una serie de imágenes y detectar ciertas características que deben ser notadas por el programa y transmitir dichas detecciones a un servidor mediante http.
+En este caso debemos de investigar en mayor profundidad y estudiar lo que es Python env, el cual es uno de los requisitos que se nos fue pedido para la elaboración, en este punto podemos decir que los entornos virtuales nos pueden facilitar algunos problemas potenciales. Pero debemos tener en cuenta que un entorno virtual en Python nos permite la gestión de dependencias y el aislamiento de proyectos, esto quiere decir que permite que los paquetes de terceros, sean instalados localmente en el directorio en el cual trabajamos y no de forma global. 
+Otra herramienta que debe ser utilizada es OpenCV, la cual es una herramienta que nos permite obtener un procesamiento casi automático de imágenes, además de ser importante en las operaciones que se efectúen en tiempo real, de esta manera no solo procesa imágenes, sino que también vídeos para así identificar objetos, rostros. Al integrarse con otras bibliotecas, como numpy.
+Es posible realizar un análisis concreto. Para la identificación de patrones se utilizan operaciones matemáticas, además de así identificar diversas características.
+
+
+
+
+
+
+
+
+RESULTADOS ESPERADOS.
+Explique en forma resumida las proyecciones y el producto esperado del proyecto y su efecto en la comunidad educativa del Campus Norte. 
+Se espera que el proyecto realizado en primera instancia pueda estar a la altura de lo esperado por la empresa que lo solicitó ya que de esta manera como alumnos podremos saber y aprender a trabajar de manera profesional ante cualquier trabajo que se presente en el futuro, así mismo podremos medir nuestra capacidad de trabajo en equipo lo cual es muy importante.
+El efecto en la comunidad educativa del campus norte se puede decir que será de manera visual principalmente para ver el resultado final de una aplicación realizada en conjunto con los miembros de este grupo dentro de  la carrera de Ingenieria Civil Informatica, ya que esta aplicación no está destinada con el propósito de uso hacia  la universidad sino para aplicación de una institución privada la cual cuenta con los respectivos recursos necesarios para la implementación del proyecto/servicio creado
+
+
+
+
+
+
+
+
+
+
+ANÁLISIS DE LA SITUACIÓN CON PROYECTO.
+Contrastar con la situación sin proyecto.  Describa según la naturaleza del proyecto los cambios que se espera se manifiesten, las variables que se espera modificar, y por qué se espera que las actividades a desarrollar impactarán positivamente en las necesidades descritas y en los indicadores definidos en las secciones anteriores (900 a 1800 palabras, una a dos páginas aprox.).
+
+
+Observando cómo la tecnología ha progresado desde laboriosos enfoques manuales hasta sistemas basados en marcadores optoelectrónicos. Los sistemas de análisis de movimiento que se utilizan actualmente más ampliamente en biomecánica deportiva y rehabilitación no permiten que los datos cinemáticos se recopilen automáticamente sin la fijación de marcadores, condiciones controladas y / o tiempos de procesamiento extensos. Estas limitaciones pueden obstaculizar el uso rutinario de la captura de movimiento en entornos normales de entrenamiento o rehabilitación, y existe un claro deseo de desarrollar sistemas automáticos sin marcadores. Dicha tecnología está surgiendo, a menudo impulsada por las necesidades de la industria del entretenimiento y utilizando muchas de las últimas tendencias en visión por computadora y aprendizaje automático. Sin embargo, la precisión y la practicidad de estos sistemas aún no se han examinado por completo, lo que significa que estos sistemas sin marcadores no se utilizan actualmente de forma generalizada en biomecánica.
+El análisis de movimiento óptico requiere la estimación de la posición y orientación (pose) de un objeto a través de secuencias de imágenes. Mediante la identificación de características de objetos comunes en imágenes sucesivas, los datos de desplazamiento se pueden "rastrear" a lo largo del tiempo. Sin embargo, la cuantificación precisa de la postura del objeto puede ser un problema difícil de resolver, ya que este puede llegar a ser una entidad extremadamente compleja, altamente articulada o sólo parcialmente rígida.
+Una amplia gama de sistemas de análisis de movimiento permite capturar el movimiento en una variedad de entornos, que pueden clasificarse en términos generales en técnicas directas (dispositivos fijados al cuerpo, por ejemplo, acelerometría) e indirectas (basadas en la visión, por ejemplo, video u optoelectrónicas). Los métodos directos permiten capturar información cinemática en diversos entornos. Por ejemplo, los sensores inerciales se han utilizado como herramientas para proporcionar información sobre la ejecución de varios movimientos.
+Un sistema de estimación de pose rápida y aproximada se ha combinado previamente con una técnica lenta y más precisa para proporcionar parámetros básicos a estudios de objetos. Este tipo de sistema puede tener utilidad en el campo aplicado al permitir que algunos de los determinantes primarios de "nivel superior" (por ejemplo, frecuencia y velocidad) sean retroalimentados durante situaciones normales de estudio o en tiempo real.
+
+
+Por parte del equipo, se prevén errores a la hora de la utilización de espacios virtuales de python en donde debemos de implementar un mismo proyecto, en cinco equipos diferentes, por lo que puede estimarse un margen de error, respecto a este problema.
+Una vez resuelto este posible problema, procedemos a utilizar las diferentes herramientas de programación, solicitadas por el cliente y que se verán afectadas por las librerías que podrán utilizarse, además de que estas pueden o no congeniar con las versiones que se tengan en los equipos. 
+Se espera de este proyecto, pueda ser ejecutado de manera embebida mediante un emulador presentado por SPICA, el cual debe de congeniar con nuestro programa,por lo que las librerías y/o elementos que utilizaremos, deben de ajustarse a las necesidades y expectativas que permitan la solicitud de la toma de una serie de imágenes, de las cuales nuestro programa debe de tomar, procesar y analizar, tal que, mediante las diferentes operaciones que se ejecuten en ese espacio de trabajo, encontremos los “blobs” y estos resultados puedan transmitirse nuevamente a nuestro emisor, que en este caso sería nuestro receptor. 
+Algunos elementos que pueden manifestarse y ser completamente modificados son los siguientes:
+* En un principio la conexión de elementos será errónea.
+* La retransmisión con los datos procesados se puede perder.
+*
+Podemos indicar que en el proceso de creación de cada espacio de trabajo, lenguaje utilizado y los resultados esperados, mediante prueba y error, nos lleva a crear un sistema que permita ver en tiempo real, datos que a simple vista no se pueden detectar. Y ayuden en un futuro inmediato.
